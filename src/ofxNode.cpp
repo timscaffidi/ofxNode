@@ -12,7 +12,8 @@ ofxNode::ofxNode() :
 ofNode(),
 content(NULL),
 drawOffset(0,0,0),
-color(255,255,255,255) {
+color(255,255,255,255),
+visible(true) {
     
 }
 
