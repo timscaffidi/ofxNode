@@ -39,6 +39,7 @@ public:
     ~ofxNodeObject();
     void loadXML(string filename);
     void addComponent(ofxNode * component);
+    vector<ofxNode *> getComponents() { return components; }
     void draw();
     void draw(float x, float y) { ofPushMatrix(); ofTranslate(x, y); draw(); ofPopMatrix(); }
     void draw(ofPoint p) { draw(p.x,p.y); }
